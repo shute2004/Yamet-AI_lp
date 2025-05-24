@@ -1,4 +1,4 @@
-# **App Name**: ChatResign
+# **App Name**: 退職代行 Yamet AI（やめたい）
 
 ## Core Features:
 

@@ -6,7 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
   title: '事前登録 | Yamet AI - 世界初の退職代行 AIエージェント', // Updated title
   description: '「辞めたい」けど言い出せないあなたへ。AIが退職の意思伝達を代行する「Yamet AI」で、スムーズな退職を。事前登録受付中。',
-  keywords: ['退職代行', 'AI', 'チャット', '退職サポート', 'Yamet AI', 'やめたい', '事前登録', 'AIエージェント'],
+  keywords: ['退職代行', 'AI', 'チャット', 'LLM', 'Yamet AI', 'やめたい', '事前登録', 'AIエージェント', '退職'],
 };
 
 export default function RootLayout({
