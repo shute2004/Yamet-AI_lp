@@ -10,23 +10,13 @@
 
 - **サービス名:** Yamet AI
 - **用途:** 退職代行AIサービスの紹介LP
-- **構成:** Next.js + TypeScript  
-- **対象:** 自分（社内）専用、検証・アイデア整理・LP迅速作成用
 
 ---
 
 ## 開発メモ
 
-- **自分用メモ**
-  - アイコンや色、テキストなどは随時仮置き・差し替えOK
-  - 仕様・設計・構成は流動的（思いついたらどんどん直す）
-  - LP構成部品は`src/components/sections/`や`src/components/ui/`で用途ごとに分割
-  - スタイル指針や要件メモは`docs/blueprint.md`に記載
-
 - **未対応・今後要検討**
-  - バックエンドAPI（/api/subscribe など）の本実装
-  - テスト/CI/CDや本番デプロイ周りは未整備
-  - TallyフォームIDや外部連携は直書き（要整理）
+  - LP以外の実装
 
 ---
 
@@ -37,28 +27,29 @@ git clone https://github.com/shute2004/Yamet-AI_lp.git
 cd Yamet-AI_lp
 npm install
 npm run dev
-# http://localhost:3000 で確認
-```
-
-- Node.js 18以上推奨
-
----
-
-## ディレクトリ構成（抜粋）
-
-```
-src/
-  app/             # Next.jsエントリ
-  components/
-    sections/      # LPセクション部品
-    ui/            # 汎用UI部品
-docs/
-  blueprint.md     # デザイン・機能要件メモ
-public/            # 画像等
+   - Local:        http://localhost:9002
+   - Network:      http://192.168.2.120:9002
 ```
 
 ---
 
+## githubへのデプロイ
+
+```bash
+どのファイルが変更されたか、新しく追加されたかなどを確認します。
+git status
+
+GitHubに保存したい変更をGitに「これらを保存しますよ」と教えます（全ての変更を一度に追加する場合）。
+git add .
+
+変更内容をコミットする
+git commit -m "ここにコミットメッセージを記述"
+
+GitHubにプッシュする (変更をアップロード)
+git push
+```
+
+---
 ## 注意
 
 - **社外非公開・自己責任運用**
