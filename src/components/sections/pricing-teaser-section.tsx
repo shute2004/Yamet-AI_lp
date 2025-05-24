@@ -9,13 +9,13 @@ export function PricingTeaserSection() {
   return (
     <section id="pricing" className="bg-background"> {/* Changed to bg-background as per alternation */}
       <div className="container mx-auto px-4 py-12 md:px-6 md:py-20 text-center">
-        <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
+        <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl text-balance">
           今だけ！<span className="text-foreground">ベータ期間中は完全無料</span>
         </h2>
-        <p className="mt-4 text-lg text-foreground max-w-xl mx-auto">
+        <p className="mt-4 text-lg text-foreground max-w-xl mx-auto text-balance">
           正式版の料金については、リリース時に改めてお知らせいたします。
         </p>
-        <p className="mt-6 mb-8 text-lg text-muted-foreground max-w-xl mx-auto">
+        <p className="mt-6 mb-8 text-lg text-muted-foreground max-w-xl mx-auto text-balance">
           面倒な手続きから解放され、新しいスタートを切りましょう！
         </p>
         <Button

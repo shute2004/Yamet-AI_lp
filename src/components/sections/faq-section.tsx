@@ -36,7 +36,7 @@ const faqs: FAQItem[] = [
   {
     value: "item-5",
     question: "退職が完了したら、すぐに解約できますか？",
-    answer: "はい、退職手続きが完了したらいつでも解約いただけます。必要な期間だけ、無駄なくご利用ください。",
+    answer: "はい、Yamet AIのサービスを通じてお客様ご自身で退職手続きを完了された後であれば、いつでもお客様のタイミングで解約手続きを進めていただけます。解約に際して、追加の費用や複雑な手続きは一切必要ございませんのでご安心ください。必要な期間だけサービスをご利用いただき、スムーズな次のステップへお進みください。",
   }
 ];
 
@@ -45,17 +45,17 @@ export function FaqSection() {
     <section id="faq" className="bg-muted"> {/* Changed to bg-muted */}
       <div className="container mx-auto max-w-3xl px-4 py-16 md:px-6 md:py-24"> 
         <div className="mb-16 text-center"> 
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
             よくあるご質問
           </h2>
         </div>
         <Accordion type="single" collapsible className="w-full space-y-4"> 
           {faqs.map((faq) => (
             <AccordionItem key={faq.value} value={faq.value} className="bg-card rounded-lg shadow-sm border border-border"> {/* Card bg should be distinct */}
-              <AccordionTrigger className="text-left text-lg hover:no-underline px-6 py-5"> 
+              <AccordionTrigger className="text-left text-base md:text-lg hover:no-underline px-4 py-5 md:px-6 text-balance">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground text-base px-6 pb-5 pt-1 leading-relaxed"> 
+              <AccordionContent className="text-muted-foreground text-base px-6 pb-5 pt-1 leading-relaxed text-balance">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

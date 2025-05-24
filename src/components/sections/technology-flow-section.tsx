@@ -41,10 +41,10 @@ export function TechnologyFlowSection() {
     <section id="technology-flow" className="bg-muted"> {/* Changed to bg-muted */}
       <div className="container mx-auto px-4 py-16 md:px-6 md:py-24">
         <div className="mb-16 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
             AIエージェントの技術フロー
           </h2>
-          <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
             Yamet AIは最新のAI技術を駆使し、あなたの退職をスマートにサポートします。
           </p>
         </div>
@@ -55,11 +55,11 @@ export function TechnologyFlowSection() {
                 <div className="mb-5 rounded-full bg-primary/10 p-3 text-primary inline-block">
                   <step.icon className="h-10 w-10" aria-hidden="true" />
                 </div>
-                <CardTitle className="text-xl font-semibold">{step.title}</CardTitle>
+                <CardTitle className="text-xl font-semibold text-balance">{step.title}</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow text-center px-6 pb-8">
-                <p className="font-medium text-foreground mb-2">{step.description}</p>
-                <p className="text-sm text-muted-foreground leading-relaxed">{step.details}</p>
+                <p className="font-medium text-foreground mb-2 text-balance">{step.description}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed text-balance">{step.details}</p>
               </CardContent>
             </Card>
           ))}

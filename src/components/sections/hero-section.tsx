@@ -12,16 +12,13 @@ export function HeroSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center gap-10 md:gap-12">
           <div className="space-y-8 md:space-y-10 max-w-3xl">
-            <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl leading-tight">
-              Yamet AI: 世界初の
-              <span className="block mt-1 md:mt-2"> 
-                退職代行 AIエージェント
-              </span>
+            <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl leading-tight text-balance">
+              Yamet AI: 世界初の <span className="whitespace-nowrap">退職代行 AIエージェント</span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-foreground font-normal mt-1 block">
+            <p className="text-lg sm:text-xl md:text-2xl text-foreground font-normal mt-1 block text-balance">
               Yamet AI → YametAI → Yametai → やめたい
             </p>
-            <p className="text-lg text-muted-foreground md:text-xl max-w-xl mx-auto">
+            <p className="text-lg text-muted-foreground md:text-xl max-w-xl mx-auto text-balance">
               「辞めたい」その一言が言い出せないあなたへ。
               Yamet AIが、退職の不安を解消し、新しい未来への扉を開きます。
             </p>

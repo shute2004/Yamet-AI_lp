@@ -35,10 +35,11 @@ export function ProblemSolutionSection() {
     <section id="problem-solution" className="bg-muted">
       <div className="container mx-auto px-4 py-16 md:px-6 md:py-24">
         <div className="mb-16 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
+
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
             こんなお悩みありませんか？
           </h2>
-          <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
             Yamet AIがあなたの退職に関する不安を、AIの力で具体的に解消します。
           </p>
         </div>
@@ -50,10 +51,11 @@ export function ProblemSolutionSection() {
                   <benefit.icon className="h-8 w-8" aria-hidden="true" />
                 </div>
                 <p className="text-base font-semibold text-muted-foreground">{benefit.problem}</p>
-                <CardTitle className="mt-2 text-2xl">{benefit.title}</CardTitle>
+
+                <CardTitle className="mt-2 text-2xl text-balance">{benefit.title}</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow text-center px-6 pb-8">
-                <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
+                <p className="text-muted-foreground leading-relaxed text-balance">{benefit.description}</p>
               </CardContent>
             </Card>
           ))}

@@ -6,14 +6,14 @@ export function CtaSection() {
     console.log('Tracking: Final CTA Section Button Clicked');
     // Tally popup will be triggered by data attributes
   };
-
   return (
     <section id="final-cta" className="bg-background border-t border-border"> {/* Changed to bg-background */}
       <div className="container mx-auto px-4 py-12 md:px-6 md:py-20 text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+
+        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
           準備はできましたか？
         </h2>
-        <p className="mt-4 mb-8 max-w-xl mx-auto text-lg text-muted-foreground">
+        <p className="mt-4 mb-8 max-w-xl mx-auto text-lg text-muted-foreground text-balance">
           Yamet AIで、退職の悩みをスムーズに解決し、新しいキャリアへの一歩を踏み出しましょう。
         </p>
         <Button
@@ -28,11 +28,10 @@ export function CtaSection() {
         >
           今すぐ事前登録をする
         </Button>
-         <p className="mt-6 text-xs text-muted-foreground text-center max-w-xl mx-auto">
+         <p className="mt-6 text-xs text-muted-foreground text-center max-w-xl mx-auto text-balance">
           ご入力いただいた個人情報は、本サービスおよび本サービスに関するご連絡の目的にのみ利用いたします。また、事前登録していただいた時点でこれに同意したものとさせていただきます。
         </p>
       </div>
     </section>
   );
 }
-
