@@ -19,6 +19,11 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+        {/* Start cookieyes banner */}
+        <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/22c9d981a2c976cbef7f48d5/script.js"></script>
+        {/* End cookieyes banner */}
+
+        {/* Google Analytics 4 Scripts */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-SD6TFVBXS5"></Script>
         <Script id="google-analytics">
           {`
