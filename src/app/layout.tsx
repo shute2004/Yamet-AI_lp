@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import Script from 'next/script';
 // Font import for Inter is removed. Using system Japanese fonts.
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
@@ -17,6 +18,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-SD6TFVBXS5"></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SD6TFVBXS5');
+          `}
+        </Script>
+      </head>
       <body className="antialiased bg-background text-foreground">
         {children}
         <Toaster />
