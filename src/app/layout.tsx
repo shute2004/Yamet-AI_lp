@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: '事前登録 | Yamet AI - 世界初の退職代行 AIエージェント', // Updated title
   description: '「辞めたい」けど言い出せないあなたへ。AIが退職の意思伝達を代行する「Yamet AI」で、スムーズな退職を。事前登録受付中。',
   keywords: ['退職代行', 'AI', 'チャット', 'LLM', 'Yamet AI', 'やめたい', '事前登録', 'AIエージェント', '退職'],
+  alternates: { // ← ここに追加
+    canonical: 'https://lp.yametai.app/',
+  },
 };
 
 export default function RootLayout({
